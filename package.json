@@ -1,9 +1,9 @@
 {
-  "name": "my-portfolio",
+  "name": "Ayman-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://aymanfarra2004.github.io/my-portfolio/",
+  "homepage": "https://aymanfarra2004.github.io/Ayman-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
