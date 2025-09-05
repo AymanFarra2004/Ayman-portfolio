@@ -1,0 +1,37 @@
+#social-media {
+    background-color: rgb(53, 51, 51);
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+#header #social-media > a {
+    margin: 15px 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    transition: color 0.3s;
+}
+#social-media > a:active {
+  color: rgb(122, 182, 184);
+}
+#social-media > a:hover {
+    cursor: pointer;
+    color: rgb(17, 17, 17);
+}
+#social-media img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+#social-media > a:hover img {
+  transform: translateY(-7px);
+}

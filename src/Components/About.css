@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/Nunito-Regular.ttf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uniform Rounded';
+  src: url('../assets/Uniform\ Rounded\ Condensed\ Light.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/Inter.ttc') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+#about {
+  background: rgb(49, 49, 49);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+#about .devider {
+  position: absolute;
+  top: 0;
+  /*     width: 100%;
+    height: 12px;
+    background: rgb(24, 24, 24); */
+}
+
+#about .text {
+  width: 100%;
+  color: rgb(255, 255, 255, 1);
+  font-family: 'Nunito', sans-serif;
+  align-self: center;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about .text h1 {
+  width: 50%;
+  max-width: 680px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 900;
+}
+#about .text h2 {
+  width: 40%;
+  max-width: 530px;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 25px;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+#about .tech-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+#about .tech-stack h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+}
+#about .tech-stack .cards {
+  max-width: 1040px;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#about .tech-stack .cards > div {
+  margin: 12px 35px;
+  background: rgb(99, 99, 99);
+  height: 400px;
+  width: 245px;
+  padding: 15px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s;
+}
+#about .tech-stack .cards > div:hover {
+  transform: translateY(-7px);
+}
+#about .tech-stack .cards > div h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0;
+}
+#about .tech-stack .cards > div ul {
+  padding: 0 30px;
+  margin: 0;
+}
+#about .tech-stack .cards > div ul li {
+  list-style: square;
+  font-family: 'Uniform Rounded', sans-serif;
+  font-size: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+#about .tech-stack .cards > div ul li:hover {
+  transform: translatex(7px);
+}
+
+.icons {
+  justify-self: flex-end;
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.icon {
+  margin: 0 5px;
+  /* margin-top: 40px; */
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: translateY(-7px);
+}
+
+.java-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+.python-logo {
+  width: 50px;
+  height: 50px;
+}
+.js-logo {
+  width: 50px;
+  height: 50px;
+}
+.php-logo {
+  width: 50px;
+  height: 50px;
+}
+.react-logo {
+  width: 50px;
+  height: 50px;
+}
+.html-logo {
+  width: 50px;
+  height: 50px;
+}
+.css-logo {
+  width: 50px;
+  height: 50px;
+}
+.mysql-logo {
+  width: 80px;
+  height: 80px;
+}
+.oraclesql-logo {
+  width: 50px;
+  height: 50px;
+}
+.os-logo {
+  width: 50px;
+  height: 50px;
+}
+.automata-icon {
+  width: 50px;
+  height: 50px;
+}
+.ca-icon {
+  width: 50px;
+  height: 50px;
+}
+.git-logo {
+  width: 40px;
+  height: 40px;
+}
+.github-logo {
+  width: 40px;
+  height: 40px;
+}
+.vsCode-logo {
+  width: 40px;
+  height: 40px;
+}
+
+#about .shadow1 {
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  background: rgb(68, 68, 68);
+  position: absolute;
+  right: -400px;
+  top: -710px;
+  z-index: -2;
+}
+#about .shadow2 {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: rgb(60, 60, 60);
+  position: absolute;
+  right: -270px;
+  top: -700px;
+  z-index: -1;
+}

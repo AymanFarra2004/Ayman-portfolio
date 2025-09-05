@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Larken';
+  src: url('../assets/LarkenDEMO-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/alfont_com_AlFont_com_AvenirArabic-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+#header {
+  background: rgb(17, 17, 17);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  position: fixed;
+}
+.shadows {
+  z-index: -5;
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+.logo {
+  color: rgb(240, 240, 240);
+  font-weight: 800;
+  font-size: 30px;
+  margin-left: 30px;
+  font-family: 'Larken', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo span {
+  color: rgb(122, 182, 184);
+  font-size: 25px;
+  margin-left: 6px;
+}
+
+#navbar-header ul {
+  margin-right: 23px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+#navbar-header ul li a {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  margin: 0 7px;
+  color: aliceblue;
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;
+}
+#navbar-header ul li p {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  margin: 0 7px;
+  color: aliceblue;
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;
+}
+#navbar-header ul li a:active {
+  color: rgb(122, 182, 184);
+}
+#navbar-header ul li p:active {
+  color: rgb(122, 182, 184);
+}
+
+#navbar-header ul li > a:hover {
+  color: rgb(68, 68, 68);
+}
+#navbar-header ul li > p:hover {
+  color: rgb(68, 68, 68);
+}
+
+.socialMedia-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.socialMedia-nav img:hover {
+  cursor: pointer;
+}
+.socialMedia-nav p {
+  margin-right: 0;
+  padding-right: 3px;
+}
+.socialMedia-nav p:hover {
+  cursor: pointer;
+}
+.drop-arrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+.dropdown {
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+}
+.dropdown.open {
+  max-height: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 40px;
+}
+
+#header .shadow1 {
+  width: 1200px;
+  height: 1200px;
+  overflow: hidden;
+
+  border-radius: 50%;
+  background: rgb(36, 36, 36);
+  position: absolute;
+  right: -400px;
+  top: -40px;
+  z-index: -2;
+}
+#header .shadow2 {
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+
+  border-radius: 50%;
+  background: rgb(24, 24, 24);
+  position: absolute;
+  right: -270px;
+  top: -40px;
+  z-index: -1;
+}
